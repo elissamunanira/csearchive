@@ -16,7 +16,7 @@
             <h3>TITLE</h3>
         <p>latest project title</p>
         </div>
-        
+
     </section>
 
 @endsection

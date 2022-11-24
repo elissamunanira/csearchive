@@ -120,12 +120,15 @@ class ProjectsController extends Controller
      */
     public function edit($id)
     {
+        //
+        $project = Project::find($id);
+        
         //check for the correct users
 
-        if(auth()->user()->id !== $project->user_id){
-            return redirect ('projects')->with('error','unauthorized page');
+        if(auth()->user()->id != $project->user_id){
+            return redirect ('/projects')->with('error','unauthorized page');
         }
-        return view ('projects.edit');
+        return view ('projects.edit')->with('project',$project);
     }
 
     /**

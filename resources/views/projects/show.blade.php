@@ -18,7 +18,9 @@
                 {{ Form::hidden('_method', 'DELETE') }}
                 {{ Form::submit('Delete', ['class'=> 'btn btn-danger']) }}
             {!!Form::close()!!}
+
         @endif
     @endif
+    <a href="/projects/{{$project->pdf_version}}" class="btn btn-info"download>DOWNLOAD </a>
 @endsection
 

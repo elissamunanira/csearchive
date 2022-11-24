@@ -62,7 +62,7 @@ class AdminController extends Controller
         $admin->department = $request->input('department');
         $admin->save();
 
-        return redirect ('/admins')->with('success', 'admin added successfully');
+        return redirect ('/admins')->with('success', 'admin account created successfully');
 
     }
 
@@ -138,7 +138,7 @@ class AdminController extends Controller
 
         //admin role
 
-        $admin_role->givePermissionTo(['create_lecturers', 
+        $admin_role->givePermissionTo(['create_lecturers',
             'view_lecturers',
             'update_lectures',
             'remove_lecturers',
