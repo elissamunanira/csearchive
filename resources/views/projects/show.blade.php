@@ -7,9 +7,7 @@
         {{$project->abstract}}
     </div>
     <hr>
-
-    <small>Written on {{$project->created_at}}</small><br>
-
+    <small>Written on {{$project->created_at}} supervised by {{$project->supervisor}} and is owned to {{$project->owner}}</small><br>
     @if(!Auth::guest())
         @if(Auth::user()->id == $project->user_id)
             <a href="/projects/{{$project->id}}/edit" class="btn btn-default">Edit</a>

@@ -16,6 +16,7 @@
             <h3>TITLE</h3>
         <p>latest project title</p>
         </div>
+        <a href="/projects">All</a>
 
     </section>
 

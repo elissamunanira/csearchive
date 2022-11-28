@@ -22,7 +22,7 @@
                     <li><a class="dropdown-item" href="/projects">All Projects</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <li><a class="dropdown-item" href="#!">IOT </a></li>
-                    <li><a class="dropdown-item" href="#!">WEB</a></li>
+                    <li><a class="dropdown-item" href="projects">WEB</a></li>
                     <li><a class="dropdown-item" href="#!">ML</a></li>
                     <li><a class="dropdown-item" href="#!">ANDROID</a></li>
                 </ul>

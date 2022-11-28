@@ -24,9 +24,9 @@ class Project extends Model
 
     public $primaryKey ='id';
 
-    // public function User(){
-    //     return $this->belongTo(User::class);
-    // }
+    public function User(){
+        return $this->belongTo(User::class);
+    }
     // public function Admin(){
     //     return $this->belongTo(Admin::class);
     // }

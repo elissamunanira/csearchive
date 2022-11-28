@@ -5,7 +5,7 @@
     <h1>Update this Project</h1>
     <form action="{{ url('projets/'.$project->id) }}" method="post"enctype="multipart/form-data">
         {!!csrf_field() !!}
-        @method('PATCH');
+        @method('PATCH')
         <div class="form-group">
             {{ Form::label('title', 'Title')}}
             {{Form::text('title',$project->title,['id'=> 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'title'])}}
@@ -25,14 +25,14 @@
         <div class="form-group">
             {{ Form::label('domain', 'domain')}}
             {{Form::text('domain',$project->domain,['class' => 'form-control', 'placeholder' => 'domain'])}}
-        </div><
+        </div>
         <div class="form-group">
-            {{ Form::label('domain', 'domain')}}
-            {{Form::text('domain',$project->domain,['class' => 'form-control', 'placeholder' => 'domain'])}}
+            {{ Form::label('supervisor', 'supervisor')}}
+            {{Form::text('supervisor',$project->supervisor,['class' => 'form-control', 'placeholder' => 'supervisor'])}}
         </div>
         <div class="form-group">
             {{Form::file('pdf_version')}}
         </div>
-        <input type="submit" name="submit" value="updoad" class="btn btn-success">
+        <input type="submit" name="submit" value="Save" class="btn btn-success">
     </form>
 @endsection

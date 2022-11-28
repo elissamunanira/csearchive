@@ -28,10 +28,13 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = Project::all();
         // DB::select('select * from projects where id = ?', [1]);
-        // $projects = Project::orderBy('created_at','desc');
-        return view('projects.index')-> with(['projects'=> $projects]);
+        // $projects = Project::orderBy('created_at','desc')->paginate(2);
+        // $projects = DB::select('SELECT * FROM projects');
+        // $projects = Project::all();
+        // return view('projects.index')-> with('projects', $projects);
+        $projects = DB::table('projects')->select('*')->get();
+        return view("projects.index", ["projects" => $projects]);
     }
 
     /**
@@ -122,7 +125,7 @@ class ProjectsController extends Controller
     {
         //
         $project = Project::find($id);
-        
+
         //check for the correct users
 
         if(auth()->user()->id != $project->user_id){

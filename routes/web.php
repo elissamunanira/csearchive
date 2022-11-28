@@ -25,6 +25,7 @@ Route::get('/about','App\Http\Controllers\PagesController@about');
 Route::get('/service','App\Http\Controllers\PagesController@service');
 
 Route::resource('/projects','App\Http\Controllers\ProjectsController');
+Route::post('/projects','App\Http\Controllers\ProjectsController@update');
 
 Route::resource('/admins','App\Http\Controllers\adminController');
 
