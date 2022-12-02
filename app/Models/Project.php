@@ -20,6 +20,7 @@ class Project extends Model
         'department',
         'domain',
         'accademic_year',
+        'supervisor',
         'pdf_version'];
 
     public $primaryKey ='id';

@@ -31,9 +31,9 @@ class ProjectsController extends Controller
         // DB::select('select * from projects where id = ?', [1]);
         // $projects = Project::orderBy('created_at','desc')->paginate(2);
         // $projects = DB::select('SELECT * FROM projects');
-        // $projects = Project::all();
+        $projects = Project::all();
         // return view('projects.index')-> with('projects', $projects);
-        $projects = DB::table('projects')->select('*')->get();
+        // $projects = DB::table('projects')->select('*')->get();
         return view("projects.index", ["projects" => $projects]);
     }
 
@@ -64,6 +64,7 @@ class ProjectsController extends Controller
             'department' => 'required',
             'domain' => 'required',
             'accademic_year' => 'required',
+            'supervisor' => 'required',
             'pdf_version' => 'required|nullable'
         ]);
 
@@ -151,6 +152,7 @@ class ProjectsController extends Controller
             'department' => 'required',
             'domain' => 'required',
             'accademic_year' => 'required',
+            'supervisor' => 'required',
             'pdf_version' => 'required|nullable'
         ]);
 

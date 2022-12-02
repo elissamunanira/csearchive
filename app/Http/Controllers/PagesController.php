@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     public function index(){
         $title ='Welcome to CSEARCHIVE';
-        return view ('pages.index')->with('title',$title);
+        return view ('pages.index');
     }
 public function about(){
     return view ('pages.about');

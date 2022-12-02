@@ -1,6 +1,6 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
-        <a class="navbar-brand" href="/">{{ config('app.name', 'LSAPP') }}</a>
+        <a class="navbar-brand" href="/">{{ config('app.name', 'CSEARCHIVE') }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,13 +22,10 @@
                     <li><a class="dropdown-item" href="/projects">All Projects</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <li><a class="dropdown-item" href="#!">IOT </a></li>
-                    <li><a class="dropdown-item" href="projects">WEB</a></li>
+                    <li><a class="dropdown-item" href="/projects">WEB</a></li>
                     <li><a class="dropdown-item" href="#!">ML</a></li>
                     <li><a class="dropdown-item" href="#!">ANDROID</a></li>
                 </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projects/create">Add project</a>
             </li>
 
                 </ul>

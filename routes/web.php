@@ -33,5 +33,5 @@ Route::resource('/admins','App\Http\Controllers\adminController');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('rolesandpermissions', [AdminController::class,'addroles']);
-
+// Route::get('rolesandpermissions', [AdminController::class,'addroles']);
+// Route::get('/download',[pdfController::class, 'download']);

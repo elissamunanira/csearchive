@@ -3,9 +3,9 @@
 
 @section('content')
     <h1>Update this Project</h1>
-    <form action="{{ url('projets/'.$project->id) }}" method="post"enctype="multipart/form-data">
-        {!!csrf_field() !!}
-        @method('PATCH')
+    <form action="{{ url('projects/'.$project->id) }}" method="post" enctype="multipart/form-data">
+        {{csrf_field()}}
+        @method("PATCH")
         <div class="form-group">
             {{ Form::label('title', 'Title')}}
             {{Form::text('title',$project->title,['id'=> 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'title'])}}
@@ -17,6 +17,10 @@
         <div class="form-group">
             {{ Form::label('owner', 'owner(student name')}}
             {{Form::text('owner',$project->owner,['class' => 'form-control', 'placeholder' => 'owner'])}}
+        </div>
+        <div class="form-group">
+            {{ Form::label('accademic_year', 'Accademic year')}}
+            {{Form::text('accademic_year',$project->accademic_year,['class' => 'form-control', 'placeholder' => 'Accademic year'])}}
         </div>
         <div class="form-group">
             {{ Form::label('department', 'department')}}

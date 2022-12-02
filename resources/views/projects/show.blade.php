@@ -19,6 +19,7 @@
 
         @endif
     @endif
-    <a href="/projects/{{$project->pdf_version}}" class="btn btn-info"download>DOWNLOAD </a>
+    <a href="/public/storage/pdf_files/{{$project->pdf_version}}" download="{{$project->pdf_version}}"class="btn btn-info">DOWNLOAD </a>
+
 @endsection
 
