@@ -2,171 +2,80 @@
 
 
 @section('content')
-{{--
 
-    <h1>{{$title}}</h1>
-    <p>This is the cse online archive</p>
-
-    <section class="content">
-        <div class="container-fluid">
-
-        <div class="row">
-        <div class="col-lg-3 col-6">
-
-        <div class="small-box bg-info">
-        <div class="inner">
-            <h3>TITLE</h3>
-        <p>latest project title</p>
-        </div>
-        <a href="/projects">All</a>
-
-    </section> --}}
-
-
-
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-        <title>Album example for Bootstrap</title>
-
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
-
-        <!-- Bootstrap core CSS -->
-        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <link href="album.css" rel="stylesheet">
-      </head>
-
-      <body>
-
-        <main role="main">
-
-          <section class="jumbotron text-center">
-            <div class="container">
-                <img src="images/3.jpg" alt="">
-              <h1 class="jumbotron-heading">Album example</h1>
-              <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-              <p>
-                <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+<br>
+        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark d-flex">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 font-italic">CSE Archiving system</h1>
+              <p class="lead my-3">Do you prefer reading the books, Do you want to gain the reference to make your own final year prouject as a cse students ?<br>
+                Here you can find the answer of ypur question.
               </p>
+              <h3 class="lead mb-0"><a href="/projects" class="text-white font-weight-bold">Lets go now </a></h3>
             </div>
-          </section>
+            <div class="col-md-6 px-0">
+                <img src="/images/6.jpg" alt="">
+              </div>
+          </div>
 
-          <div class="album py-5 bg-light">
-            <div class="container">
+          <br>
 
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
+          <h2>Recent Projects</h2>
 
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="#"style="text-decoration: none;">Bus reservation system</a>
+                  </h3>
+                  <div class="mb-1 text-muted">05 Dec 2022</div>
+                  <p class="card-text mb-auto">This is there to help the different people from different areas to keep the place in the bus without going to the bus station and when the time to go.</p>
+                  <a href="#">Continue reading</a>
                 </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-               
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="#"style="text-decoration: none;">library management</a>
+                  </h3>
+                  <div class="mb-1 text-muted">05 Dec 2022</div>
+                  <p class="card-text mb-auto">This is the abstract of the library management project which is designed for the purpose of managing the library in the easy and easiest way.</p>
+                  <a href="#">Continue reading</a>
                 </div>
               </div>
             </div>
           </div>
-        </main>
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="#"style="text-decoration: none;">Sell App</a>
+                  </h3>
+                  <div class="mb-1 text-muted">28 Nov 2022</div>
+                  <p class="card-text mb-auto">This project has developed in the react native and its purpose is to support the people who are using it to buy and sell their product online. .</p>
+                  <a href="#">Continue reading</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="#"style="text-decoration: none;">Hostel Management</a>
+                  </h3>
+                  <div class="mb-1 text-muted">21 Nov 2022</div>
+                  <p class="card-text mb-auto">This is the web based project that is developed for the purpose of the managing the students hostel in the easy way.</p>
+                  <a href="#">Continue reading</a>
+                </div>
+              </div>
+            </div>
 
-        <footer class="text-muted">
-          <div class="container">
-            <p class="float-right">
-              <a href="#">Back to top</a>
-            </p>
-            <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+          <a href="/projects">more</a>
           </div>
-        </footer>
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-        <script src="../../assets/js/vendor/popper.min.js"></script>
-        <script src="../../dist/js/bootstrap.min.js"></script>
-        <script src="../../assets/js/vendor/holder.min.js"></script>
-      </body>
-    </html>
-
-
+          <a href="">Back to top</a>
+        </div>
 
 @endsection

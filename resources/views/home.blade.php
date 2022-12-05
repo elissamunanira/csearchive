@@ -75,7 +75,7 @@
   </div>
 </header> --}}
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-left: -20;">
   <div class="row">
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       <div class="position-sticky pt-3 sidebar-sticky">
@@ -98,55 +98,44 @@
               MANAGE USERS
             </a>
           </li>
-          <li class="nav-project">
-            <a class="nav-link" href="#">
-              <span data-feather="users" class="align-text-bottom"></span>
-              Customers
-            </a>
-          </li>
-          <li class="nav-project">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-              Reports
-            </a>
-          </li>
-          <li class="nav-project">
-            <a class="nav-link" href="#">
-              <span data-feather="layers" class="align-text-bottom"></span>
-              Integrations
-            </a>
-          </li>
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-projects-center px-3 mt-4 mb-1 text-muted text-uppercase">
-          <span>Saved reports</span>
+          <span>Saved projects</span>
           <a class="link-secondary" href="#" aria-label="Add a new report">
             <span data-feather="plus-circle" class="align-text-bottom"></span>
           </a>
         </h6>
         <ul class="nav flex-column mb-2">
+            <li class="nav-project">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text" class="align-text-bottom"></span>
+                WEB Based
+              </a>
+            </li>
+        <ul class="nav flex-column mb-2">
           <li class="nav-project">
             <a class="nav-link" href="#">
               <span data-feather="file-text" class="align-text-bottom"></span>
-              Current month
+              IOT Based
             </a>
           </li>
           <li class="nav-project">
             <a class="nav-link" href="#">
               <span data-feather="file-text" class="align-text-bottom"></span>
-              Last quarter
+              Mobile Based
             </a>
           </li>
           <li class="nav-project">
             <a class="nav-link" href="#">
               <span data-feather="file-text" class="align-text-bottom"></span>
-              Social engagement
+              ML based
             </a>
           </li>
           <li class="nav-project">
             <a class="nav-link" href="#">
               <span data-feather="file-text" class="align-text-bottom"></span>
-              Year-end sale
+              All Projects
             </a>
           </li>
         </ul>
@@ -171,10 +160,10 @@
       <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> --}}
 
       <a href="/projects/create" class="btn btn-primary">ADD NEW PROJECT</a>
+      <center><h2>The created projects</h2></center>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
-
             <tr>
               <th scope="col">P_ID</th>
               <th scope="col">TITLE</th>
@@ -182,8 +171,8 @@
             </tr>
           </thead>
           <tbody>
-            @if(!empty($projects))
-            @foreach($projects as $project)
+            {{-- @if(!empty($projects)) --}}
+            @foreach($project as $project)
             <tr>
                 <td>{{ $project->id}}</td>
                 <td>{{ $project->title }}</td>
@@ -198,7 +187,7 @@
                 </td>
             </tr>
         @endforeach
-        @endif
+        {{-- @endif --}}
           </tbody>
         </table>
       </div>

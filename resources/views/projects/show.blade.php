@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
 <a href="/projects"class="btn btn-default ">GO BACK</a>
     <h1>{{$project->title}}</h1>
     <div>
-        {{$project->abstract}}
+       <p class="lead my-3" > {{$project->abstract}} </p>
     </div>
     <hr>
     <small>Written on {{$project->created_at}} supervised by {{$project->supervisor}} and is owned to {{$project->owner}}</small><br>
@@ -20,6 +21,6 @@
         @endif
     @endif
     <a href="/public/storage/pdf_files/{{$project->pdf_version}}" download="{{$project->pdf_version}}"class="btn btn-info">DOWNLOAD </a>
-
+</div>
 @endsection
 

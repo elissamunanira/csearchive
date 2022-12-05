@@ -29,9 +29,9 @@ class ProjectsController extends Controller
     public function index()
     {
         // DB::select('select * from projects where id = ?', [1]);
-        // $projects = Project::orderBy('created_at','desc')->paginate(2);
+        $projects = Project::orderBy('created_at','desc')->paginate(10);
         // $projects = DB::select('SELECT * FROM projects');
-        $projects = Project::all();
+        // $projects = Project::all();
         // return view('projects.index')-> with('projects', $projects);
         // $projects = DB::table('projects')->select('*')->get();
         return view("projects.index", ["projects" => $projects]);
@@ -167,7 +167,7 @@ class ProjectsController extends Controller
             $extension = $request->file('pdf_version' )->getClientOriginalExtension();
             //Filename to store
             $fileNameToStore = $filename. '_'.time().'.'.$extension;
-            //upload image
+            //upload pdf
             $path = $request->file('pdf_version')->storeAs('public/pdf_files/',$fileNameToStore);
         }
 
@@ -183,7 +183,7 @@ class ProjectsController extends Controller
         $project->domain = $request->input('domain');
         $project->supervisor = $request->input('supervisor');
         if($request->hasFile('pdf_version')){
-            $project->pdf_version =$fileNameToStore;
+        // $project->pdf_version =$fileNameToStore;
         }
         $project->save();
 
@@ -198,7 +198,8 @@ class ProjectsController extends Controller
      */
     public function destroy($id)
     {
-        //Deleting project
+
+        //Deleting project controller
         $project = project::find($id);
 
         $project->delete();

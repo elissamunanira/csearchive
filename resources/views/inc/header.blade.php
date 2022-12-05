@@ -12,25 +12,31 @@
             <li class="nav-item">
               <a class="nav-link" href="/about">ABOUT</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/service">SERVICES</a>
-            </li>
+
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PROJECTS</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="/projects">All Projects</a></li>
                     <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#!">IOT </a></li>
+                    <li><a class="dropdown-item" href="/projects">IOT </a></li>
                     <li><a class="dropdown-item" href="/projects">WEB</a></li>
                     <li><a class="dropdown-item" href="#!">ML</a></li>
                     <li><a class="dropdown-item" href="#!">ANDROID</a></li>
                 </ul>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/service">Contact </a>
+              </li>
 
                 </ul>
-
-                <!-- Right Side Of Navbar -->
+                    <form class="form-line mt-2 mt-md-0">
+                        <div class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-primary">search</button>
+                          </div>
+                      </form>
+                                      <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
                     <!-- Authentication Links -->
 
@@ -38,12 +44,6 @@
                         @if (Route::has('login'))
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                        @endif
-
-                        @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
                     @else
@@ -66,12 +66,6 @@
                             </div>
                         </li>
                     @endguest
-                    <form class="form-line mt-2 mt-md-0">
-                        <div class="input-group">
-                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                            <button type="button" class="btn btn-outline-primary">search</button>
-                          </div>
-                      </form>
                 </ul>
             </div>
 
