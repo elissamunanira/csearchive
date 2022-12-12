@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
-use App\Models\Admin;
 use App\Models\User;
 use DB;
 use App\Http\Requests;
@@ -152,8 +151,7 @@ class ProjectsController extends Controller
             'department' => 'required',
             'domain' => 'required',
             'accademic_year' => 'required',
-            'supervisor' => 'required',
-            'pdf_version' => 'required|nullable'
+            'supervisor' => 'required'
         ]);
 
         //uplaoding pdf_version file
