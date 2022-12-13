@@ -98,6 +98,12 @@
               MANAGE USERS
             </a>
           </li>
+          <li class="nav-project">
+            <a class="nav-link" href="/roles">
+              <span data-feather="shopping-cart" class="align-text-bottom"></span>
+              MANAGE ROLES
+            </a>
+          </li>
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-projects-center px-3 mt-4 mb-1 text-muted text-uppercase">
@@ -133,7 +139,7 @@
             </a>
           </li>
           <li class="nav-project">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/projects">
               <span data-feather="file-text" class="align-text-bottom"></span>
               All Projects
             </a>
